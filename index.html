@@ -66,13 +66,13 @@
         color: #f48fb1;
         text-align: center;
         position: absolute;
-        top: 73%;
+        top: 68%;
         opacity: 0;
         animation: vem_feliz 2s ease-in-out 7s forwards;
     }
     .ano_novo{
         position: relative;
-        top: 0;
+        top: -120px;
         left: 0;
         width: 100%;
         height: 100%;
@@ -363,6 +363,9 @@
     }
 </style>
 <body>
+<div class="" style="float: left; margin-top: 30px;margin-left: 30px">
+    <img src="img/a_e_logo4c_y.png" alt="" width="300">
+</div>
 <div class="feliz2">
     <div class="container">
         <div class="row">
@@ -370,7 +373,7 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="output" id="output">^_^</div>
+                <div class="output" id="output">-_-</div>
             </div>
             <div class="col-md-3">
 
@@ -419,7 +422,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script>
-    function generateNumber(number, numberA) {
+    function generateNumber(number, numberA, dataGetFromLocalStorage) {
         var desired = number;
         var duration = 10000;
 
@@ -431,6 +434,7 @@
             if (new Date().getTime() - started > duration) {
                 clearInterval(animationTimer); // Stop the loop
                 output.text(desired); // Print desired number in case it stopped at a different one due to duration expiration
+                saveLocalStorage(dataGetFromLocalStorage);
             } else {
                 output.text(
                     '' +
@@ -466,8 +470,7 @@
             numberRandom = randomNumber(79);
         }
         dataGetFromLocalStorage.push(numberRandom);
-        generateNumber(numberRandom, 79);
-        saveLocalStorage(dataGetFromLocalStorage);
+        generateNumber(numberRandom, 79, dataGetFromLocalStorage);
     });
 </script>
 </body>
