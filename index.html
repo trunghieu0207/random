@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boostrap.min.css">
     <title>Document</title>
 </head>
 <style>
@@ -192,12 +192,12 @@
         top: 70%;
     }
     .fogos>div.f5{
-        right: 15%;
-        top: 210px;
+        right: 13%;
+        top: 140px;
     }
     .fogos>div.f6{
-        left: 10%;
-        top: 210px;
+        left: 3%;
+        top: 145px;
     }
     .fogos>div span{
         width: 6px;
@@ -406,9 +406,32 @@
         .btn-other-screen {
             margin-top: -25px;
         }
+
+        .fogos>div.f5{
+            right: 15%;
+            top: 118px;
+        }
+
+        .fogos>div.f5>img.image-1{
+            top: 84px;
+        }
+
+        .fogos>div.f6{
+            left: 1%;
+            top: 122px;
+        }
+        .fogos>div.f6>img.image-2{
+            left: 3%;
+            top: 145px;
+        }
     }
 </style>
 <body>
+<audio controls autoplay hidden loop>
+    <source src="music/music.mp3" type="audio/ogg">
+    <source src="music/music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 <div class="" style="float: left; margin-top: 30px;margin-left: 30px; z-index: 3">
     <img src="img/a_e_logo4c_y.png" alt="" width="300">
 </div>
@@ -419,7 +442,7 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="output" id="output"><img src="img/a_e_logo4c_y.png" alt="" width="100"></div>
+                <div class="output" id="output"><img src="img/trau2.jpg" alt="" width="300" style="border-radius: 40%"></div>
             </div>
             <div class="col-md-3">
 
@@ -464,15 +487,15 @@
         <span><i></i></span>
     </div>
     <div class="f5">
-        <img src="img/a_e_logo4c_y.png" alt="" width="100">
+        <img src="img/Capture.PNG" alt="" width="200" style="border-radius: 30%" class="image-1">
     </div>
     <div class="f6">
-        <img src="img/a_e_logo4c_y.png" alt="" width="100">
+        <img src="img/Capture2.PNG" alt="" width="200" style="border-radius: 30%" class="image-2">
     </div>
 </div>
 <a href="#" class="author">Marcela Bomfim</a>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
     function generateNumber(number, numberA, dataGetFromLocalStorage) {
         var desired = number;
