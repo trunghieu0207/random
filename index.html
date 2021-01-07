@@ -195,6 +195,10 @@
         right: 15%;
         top: 210px;
     }
+    .fogos>div.f6{
+        left: 15%;
+        top: 210px;
+    }
     .fogos>div span{
         width: 6px;
         height: 6px;
@@ -480,6 +484,7 @@
                 clearInterval(animationTimer); // Stop the loop
                 output.text(desired); // Print desired number in case it stopped at a different one due to duration expiration
                 saveLocalStorage(dataGetFromLocalStorage);
+                document.querySelector('.btn-random-all').disabled = false;
             } else {
                 output.text(
                     '' +
@@ -516,11 +521,12 @@
         }
         dataGetFromLocalStorage.push(numberRandom);
         generateNumber(numberRandom, 79, dataGetFromLocalStorage);
+        document.querySelector('.btn-random-all').disabled = true;
     });
 </script>
 <script>
     let chars, particles, canvas, ctx, w, h, current;
-    let duration = 5000;
+    let duration = 4000;
     let str = ['HAPPY', 'NEW', 'YEAR' , '2021'];
 
     init();
