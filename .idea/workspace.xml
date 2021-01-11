@@ -20,12 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f62116fe-3e22-4745-a70d-241dc67d8dba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/boostrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Capture.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Capture2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/trau2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -73,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609744010600</updated>
       <workItem from="1609744011939" duration="48913000" />
+      <workItem from="1610321937497" duration="627000" />
     </task>
     <servers />
   </component>
@@ -89,6 +84,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="815" y="139" key="RollbackChangesDialog" timestamp="1610029458523">
