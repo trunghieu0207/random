@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f62116fe-3e22-4745-a70d-241dc67d8dba" name="Default Changelist" comment="">
+    <list default="true" id="f62116fe-3e22-4745-a70d-241dc67d8dba" name="Default Changelist" comment="Remove border.">
+      <change afterPath="$PROJECT_DIR$/4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style-lucky.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/confetti.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -67,8 +71,18 @@
       <option name="presentableId" value="Default" />
       <updated>1609744010600</updated>
       <workItem from="1609744011939" duration="48913000" />
-      <workItem from="1610321937497" duration="627000" />
+      <workItem from="1610321937497" duration="14084000" />
+      <workItem from="1610408803731" duration="1143000" />
+      <workItem from="1610410559039" duration="1969000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove border.">
+      <created>1610338983837</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610338983837</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,11 +100,19 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove border." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove border." />
+  </component>
   <component name="WindowStateProjectService">
     <state x="815" y="139" key="RollbackChangesDialog" timestamp="1610029458523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="815" y="139" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610029458523" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1610338986613">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610338986613" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610029507797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style-lucky.css">
+    <title>Document</title>
+<body>
+<!--   -->
+<script src="js/confetti.min.js"></script><script id="start"></script>
+<div class="container">
+    <div class="box">
+        <div class="fold" id="glass">
+            <div class="click" id="myBtn"><div class="click-text">^^</div></div>
+        </div>
+        <div class="text">Máy xay sinh tố cầm tay</div>
+
+        <div class="new_year_text">Congratulations!!</div>
+        <div class="new_year_image"><img src="img_lucky/may_sinh_to.jpg" id="img1"></div>
+    </div>
+</div>
+<!--<script src="js/jquery.min.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script>
+    window.addEventListener("load", function() {
+        // alert("hhi");
+        document.getElementById("glass").classList.toggle("hidden");
+
+        document.getElementById("start").innerHTML=confetti.start();
+    });
+
+</script>
+</body>
+</html>

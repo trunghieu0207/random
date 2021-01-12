@@ -29,13 +29,20 @@
         box-sizing: border-box;
     }
     .btn-random-all {
-        margin: -7px;
+        margin: -20px;
         padding: 20px;
-        width: 100%;
         box-sizing: border-box;
     }
-    .text {
-        font-size: 35px;
+    button {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+    }
+    .img-random {
+        margin-right: 30px;
     }
     @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Pacifico');
 
@@ -373,7 +380,18 @@
             opacity: 1;
         }
     }
-    @media only screen and (max-width: 1500px){
+    #countdown {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: inline-block;
+        transform: translate(-50%, -50%);
+        transition: 1s;
+        font-size: 0vw;
+        opacity: 50%;
+        color: #ffffff;
+    }
+    @media only screen and (max-width: 1600px){
         .feliz{
             width: 100%;
             font-family: 'Pacifico', cursive;
@@ -422,6 +440,20 @@
             left: 3%;
             top: 145px;
         }
+        .img-trau2 {
+            width: 270px;
+        }
+        .output {
+            /*background-color: #ffffff;*/
+            font-size: 215px;
+            width: 100%;
+            color: #ffffff;
+            float: left;
+            text-align: center;
+            height: 100%;
+            box-sizing: border-box;
+            margin-top: -14px;
+        }
     }
 </style>
 <body>
@@ -440,7 +472,7 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <div class="output" id="output"><img src="img/trau2.jpg" alt="" width="300" style="border-radius: 40%"></div>
+                <div class="output" id="output"><img src="img/trau2.jpg" class="img-trau2" alt="" width="300" style="border-radius: 40%"></div>
             </div>
             <div class="col-md-3">
 
@@ -449,7 +481,7 @@
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6 btn-other-screen">
-                <button type="button" name="btn-random" class="btn-random-all btn btn-primary"><span class="text">Press to change your life ==))</span></button>
+                <button type="button" name="btn-random" class="btn-random-all"> <img src="img/pngegg.png" alt="" width="300px" class="img-random"></button>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -458,7 +490,7 @@
 <div class="feliz">Happy new year</div>
 
 <div class="ano_novo">
-    <span>202</span>
+    <span data-toggle="modal" data-target="#exampleModal">202</span>
     <span class="seis">0</span>
     <span class="sete">1</span>
     <div class="balao"></div>
@@ -495,9 +527,9 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-    function generateNumber(number, numberA, dataGetFromLocalStorage) {
+    function generateNumber(number, numberA, dataGetFromLocalStorage, counterSaveToLocal) {
         var desired = number;
-        var duration = 10000;
+        var duration = 3000;
 
         var output = $('#output'); // Start ID with letter
         var started = new Date().getTime();
@@ -508,7 +540,15 @@
                 clearInterval(animationTimer); // Stop the loop
                 output.text(desired); // Print desired number in case it stopped at a different one due to duration expiration
                 saveLocalStorage(dataGetFromLocalStorage);
+                saveCounterToLocalStorage(counterSaveToLocal)
                 document.querySelector('.btn-random-all').disabled = false;
+                counterTimer();
+                window.setTimeout(function(){
+
+                    // Move to a new location or you can do something else
+                    window.location.href = counterSaveToLocal + '.html';
+
+                }, 5000);
             } else {
                 output.text(
                     '' +
@@ -533,18 +573,60 @@
         return JSON.parse(numberFormLocalStorage);
     }
 
+    function getCounterToLocalStorage() {
+        var counter = localStorage.getItem('counter');
+        if (counter === null) {
+            return null;
+        }
+        return counter;
+    }
+
     function saveLocalStorage(numberIsRandom) {
         localStorage.setItem('number', JSON.stringify(numberIsRandom))
+    }
+
+    function saveCounterToLocalStorage(counter) {
+        localStorage.setItem('counter', counter);
+    }
+
+    // $(document).ready();
+    function counterTimer() {
+        var counter = 4
+
+        var timer = setInterval( function() {
+
+            $('#countdown').remove();
+
+            var countdown = $('<span id="countdown">'+(counter==0?'SMILE!!':counter)+'</span>');
+            countdown.appendTo($('.container'));
+            setTimeout( () => {
+                if (counter >-1) {
+                    $('#countdown').css({ 'font-size': '200vw', 'opacity': 0 });
+                } else {
+                    $('#countdown').css({ 'font-size': '20vw', 'opacity': 50 });
+                }
+            },20);
+            counter--;
+            if (counter == -1) clearInterval(timer);
+        }, 1000);
     }
 
     document.querySelector('.btn-random-all').addEventListener('click', () => {
         var numberRandom = randomNumber(79);
         var dataGetFromLocalStorage = getFromLocalStorage();
+        var counter = getCounterToLocalStorage();
+        if (counter == null) {
+            counter = 5 ;
+        } else {
+            counter = Number.parseInt(counter, 10);
+            counter -= 1;
+        }
+        console.log(counter);
         while (dataGetFromLocalStorage.indexOf(numberRandom) !== -1) {
             numberRandom = randomNumber(79);
         }
         dataGetFromLocalStorage.push(numberRandom);
-        generateNumber(numberRandom, 79, dataGetFromLocalStorage);
+        generateNumber(numberRandom, 79, dataGetFromLocalStorage, counter);
         document.querySelector('.btn-random-all').disabled = true;
     });
 </script>
