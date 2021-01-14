@@ -541,14 +541,19 @@
                 output.text(desired); // Print desired number in case it stopped at a different one due to duration expiration
                 saveLocalStorage(dataGetFromLocalStorage);
                 saveCounterToLocalStorage(counterSaveToLocal)
-                document.querySelector('.btn-random-all').disabled = false;
-                counterTimer();
-                window.setTimeout(function(){
+                //document.querySelector('.btn-random-all').disabled = false;
+                if (counterSaveToLocal >=1 && counterSaveToLocal <=5) {
+                    counterTimer();
+                    window.setTimeout(function(){
 
-                    // Move to a new location or you can do something else
-                    window.location.href = counterSaveToLocal + '.html';
+                        // Move to a new location or you can do something else
+                        window.location.href = counterSaveToLocal + '.html';
 
-                }, 5000);
+                    }, 5000);
+                } else {
+                    document.querySelector('.btn-random-all').disabled = false;
+                }
+
             } else {
                 output.text(
                     '' +

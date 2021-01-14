@@ -19,12 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f62116fe-3e22-4745-a70d-241dc67d8dba" name="Default Changelist" comment="Remove border.">
-      <change afterPath="$PROJECT_DIR$/4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style-lucky.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/confetti.min.js" afterDir="false" />
+    <list default="true" id="f62116fe-3e22-4745-a70d-241dc67d8dba" name="Default Changelist" comment="Edit random time.">
+      <change afterPath="$PROJECT_DIR$/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.html" beforeDir="false" afterPath="$PROJECT_DIR$/4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.html" beforeDir="false" afterPath="$PROJECT_DIR$/5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-lucky.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-lucky.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +75,9 @@
       <workItem from="1609744011939" duration="48913000" />
       <workItem from="1610321937497" duration="14084000" />
       <workItem from="1610408803731" duration="1143000" />
-      <workItem from="1610410559039" duration="1969000" />
+      <workItem from="1610410559039" duration="8504000" />
+      <workItem from="1610495242406" duration="2169000" />
+      <workItem from="1610586237788" duration="1238000" />
     </task>
     <task id="LOCAL-00001" summary="Remove border.">
       <created>1610338983837</created>
@@ -82,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610338983837</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add counter and redirect to lucky.">
+      <created>1610413421776</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610413421776</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Edit random time.">
+      <created>1610413513760</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610413513760</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,17 +120,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove border." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove border." />
+    <MESSAGE value="Add counter and redirect to lucky." />
+    <MESSAGE value="Edit random time." />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit random time." />
   </component>
   <component name="WindowStateProjectService">
     <state x="815" y="139" key="RollbackChangesDialog" timestamp="1610029458523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="815" y="139" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610029458523" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1610338986613">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1610413515171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610338986613" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610413515171" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610029507797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

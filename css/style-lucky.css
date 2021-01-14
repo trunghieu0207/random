@@ -1,109 +1,130 @@
-html,body{
-    background-color:#f5f4f4;
-    margin:0px;
-    height:100%;
-    font-family: "Arial", serif !important; ;
+html, body {
+    background-color: #f5f4f4;
+    margin: 0px;
+    height: 100%;
+    font-family: "Arial", serif !important;;
 }
-.container{
+
+.container {
     background: #E4E4E4;
-    height:100%;
-    width:100%;
-
+    height: 100%;
+    width: 100%;
 }
-.box{
-    height:80%;
-    width:85%;
+
+.box {
+    min-height: 90%;
+    width: 85%;
     background: rgb(255, 255, 255);
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-    z-index:0;
-
-
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
-.cls-1{
-    position:relative;
-    left:50%;
+.cls-1 {
+    position: relative;
+    left: 50%;
     background-color: brown;
 }
-.new_year_image{
+
+.new_year_image {
     position: absolute;
     margin-bottom: -19px;
     margin-left: 410px;
 }
-#img1{
-    width:105%;
-    height:10%;
-    position:relative;
-    left:50%;
-    transform: translate(-50%);
-}
-#img2{
-    width:60%;
-    height:10%;
-    position:relative;
-    left:42%;
-    transform: translate(-50%);
-}
-.new_year_text{
 
-    color:#707070;
+#img1 {
+    width: 115%;
+    height: 10%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#img2 {
+    width: 60%;
+    height: 10%;
+    position: relative;
+    left: 42%;
+    transform: translate(-50%);
+}
+
+#img3 {
+    width: 76%;
+    height: 10%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#img4 {
+    width: 91%;
+    height: 10%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.new_year_text {
+
+    color: #707070;
     font-family: Rage, 'Dancing Script', cursive;
-    font-size:26px;
+    font-size: 26px;
     text-align: center;
     position: relative;
-    bottom:34px;
-
+    bottom: 34px;
 }
-.fold{
-    position:absolute;
-    height:99%;
-    width:98%;
-    top:50%;
-    right:0px;
-    transform: translate(0,-50%);
+
+.fold {
+    position: absolute;
+    height: 99%;
+    width: 98%;
+    top: 50%;
+    right: 0px;
+    transform: translate(0, -50%);
     z-index: 10;
     background-image: linear-gradient(
             -45deg,
-            rgb(202,228,219,0.5),
+            rgb(202, 228, 219, 0.5),
             rgba(185, 185, 185, 0.2)
     );
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    box-shadow: 10px 8px 30px 0 rgba( 80, 80, 80, .2 );
-    border-radius:20px 0 0 20px;
+    box-shadow: 10px 8px 30px 0 rgba(80, 80, 80, .2);
+    border-radius: 20px 0 0 20px;
     transition: 2s;
 }
-.click{
-    height:10%;
-    width:15%;
-    min-height:54px;
+
+.click {
+    height: 10%;
+    width: 15%;
+    min-height: 54px;
     min-width: 96px;
 
     font-size: 20px;
-    background-color:#cae4db;
+    background-color: #cae4db;
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translate(0, -50%);
     cursor: pointer;
 
 
-
 }
-.click-text{
+
+.click-text {
     text-align: center;
     vertical-align: middle;
-    color:white;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
-    position:relative;
-    top:50%;
+    position: relative;
+    top: 50%;
     transform: translate(0, -50%);
-    transition:2s;
+    transition: 2s;
 }
-.hidden{
-    width:10%;
+
+.hidden {
+    width: 10%;
 }
 
 .text {
@@ -112,4 +133,71 @@ html,body{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1600px) {
+    #img1 {
+        width: 77%;
+        height: 10%;
+        position: relative;
+        left: 33%;
+        transform: translate(-50%);
+    }
+
+    #img2 {
+        width: 45%;
+        height: 10%;
+        position: relative;
+        left: 29%;
+        transform: translate(-50%);
+    }
+
+    #img3 {
+        width: 47%;
+        height: 10%;
+        position: relative;
+        left: 29%;
+        transform: translate(-50%);
+    }
+
+    #img4 {
+        width: 62%;
+        height: 10%;
+        position: relative;
+        left: 29%;
+        transform: translate(-50%);
+    }
+}
+@media only screen and (max-width: 1400px) {
+    #img1 {
+        width: 77%;
+        height: 10%;
+        position: relative;
+        left: 22%;
+        transform: translate(-50%);
+    }
+
+    #img2 {
+        width: 45%;
+        height: 10%;
+        position: relative;
+        left: 22%;
+        transform: translate(-50%);
+    }
+
+    #img3 {
+        width: 47%;
+        height: 10%;
+        position: relative;
+        left: 22%;
+        transform: translate(-50%);
+    }
+
+    #img4 {
+        width: 62%;
+        height: 10%;
+        position: relative;
+        left: 22%;
+        transform: translate(-50%);
+    }
 }
